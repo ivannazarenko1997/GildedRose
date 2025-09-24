@@ -1,0 +1,49 @@
+2025-09-24T22:53:31.755+03:00  INFO 302648 --- [main] com.gildedrose.GildedRoseApplication     : Starting GildedRoseApplication using Java 21.0.4 with PID 302648 (C:\sendai\gilded-rose-spring-v2\target\classes started by ivann in C:\sendai\gilded-rose-spring-v2)
+2025-09-24T22:53:31.757+03:00 DEBUG 302648 --- [main] com.gildedrose.GildedRoseApplication     : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-09-24T22:53:31.758+03:00  INFO 302648 --- [main] com.gildedrose.GildedRoseApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-09-24T22:53:32.257+03:00  INFO 302648 --- [main] com.gildedrose.GildedRoseApplication     : Started GildedRoseApplication in 1.0 seconds (process running for 1.584)
+2025-09-24T22:53:32.282+03:00  INFO 302648 --- [main] com.gildedrose.GildedRoseApplication     : Starting application GildedRose
+2025-09-24T22:53:32.287+03:00  INFO 302648 --- [main] com.gildedrose.GildedRoseApplication     : Finish succesfully application GildedRose
+2025-09-24T22:53:32.288+03:00  INFO 302648 --- [main] com.gildedrose.GildedRoseApplication     : Exit application GildedRose
+2025-09-24T22:54:54.167+03:00  INFO 134996 --- [main] com.gildedrose.GildedRoseApplication     : Starting GildedRoseApplication using Java 21.0.4 with PID 134996 (C:\sendai\gilded-rose-spring-v2\target\classes started by ivann in C:\sendai\gilded-rose-spring-v2)
+2025-09-24T22:54:54.169+03:00 DEBUG 134996 --- [main] com.gildedrose.GildedRoseApplication     : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-09-24T22:54:54.170+03:00  INFO 134996 --- [main] com.gildedrose.GildedRoseApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-09-24T22:54:54.749+03:00  INFO 134996 --- [main] com.gildedrose.GildedRoseApplication     : Started GildedRoseApplication in 1.167 seconds (process running for 1.902)
+2025-09-24T22:54:54.753+03:00  INFO 134996 --- [main] com.gildedrose.GildedRoseApplication     : Starting application GildedRose
+2025-09-24T22:54:54.760+03:00  INFO 134996 --- [main] com.gildedrose.GildedRoseApplication     : Finish succesfully application GildedRose
+2025-09-24T22:54:54.760+03:00  INFO 134996 --- [main] com.gildedrose.GildedRoseApplication     : Exit application GildedRose
+2025-09-24T23:40:49.072+03:00  INFO 303232 --- [main] com.gildedrose.GildedRoseApplication     : Starting GildedRoseApplication using Java 21.0.4 with PID 303232 (C:\sendai\gilded-rose-spring-v2\target\classes started by ivann in C:\sendai\gilded-rose-spring-v2)
+2025-09-24T23:40:49.074+03:00 DEBUG 303232 --- [main] com.gildedrose.GildedRoseApplication     : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-09-24T23:40:49.075+03:00  INFO 303232 --- [main] com.gildedrose.GildedRoseApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-09-24T23:40:49.572+03:00  INFO 303232 --- [main] com.gildedrose.GildedRoseApplication     : Started GildedRoseApplication in 1.01 seconds (process running for 1.66)
+2025-09-24T23:40:49.575+03:00  INFO 303232 --- [main] com.gildedrose.GildedRoseApplication     : Starting application GildedRose
+2025-09-24T23:40:49.581+03:00  INFO 303232 --- [main] com.gildedrose.GildedRoseApplication     : Finish succesfully application GildedRose
+2025-09-24T23:40:49.581+03:00  INFO 303232 --- [main] com.gildedrose.GildedRoseApplication     : Exit application GildedRose
+2025-09-24T23:42:04.687+03:00  INFO 166076 --- [main] com.gildedrose.GildedRoseApplication     : Starting GildedRoseApplication using Java 21.0.4 with PID 166076 (C:\sendai\gilded-rose-spring-v2\target\classes started by ivann in C:\sendai\gilded-rose-spring-v2)
+2025-09-24T23:42:04.689+03:00 DEBUG 166076 --- [main] com.gildedrose.GildedRoseApplication     : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-09-24T23:42:04.690+03:00  INFO 166076 --- [main] com.gildedrose.GildedRoseApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-09-24T23:42:05.149+03:00  INFO 166076 --- [main] com.gildedrose.GildedRoseApplication     : Started GildedRoseApplication in 0.975 seconds (process running for 1.521)
+2025-09-24T23:42:05.153+03:00  INFO 166076 --- [main] com.gildedrose.GildedRoseApplication     : Starting application GildedRose
+2025-09-24T23:42:05.159+03:00  INFO 166076 --- [main] com.gildedrose.GildedRoseApplication     : Finish succesfully application GildedRose
+2025-09-24T23:42:05.159+03:00  INFO 166076 --- [main] com.gildedrose.GildedRoseApplication     : Exit application GildedRose
+2025-09-24T23:42:32.106+03:00  INFO 173060 --- [main] com.gildedrose.GildedRoseApplication     : Starting GildedRoseApplication using Java 21.0.4 with PID 173060 (C:\sendai\gilded-rose-spring-v2\target\classes started by ivann in C:\sendai\gilded-rose-spring-v2)
+2025-09-24T23:42:32.108+03:00 DEBUG 173060 --- [main] com.gildedrose.GildedRoseApplication     : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-09-24T23:42:32.109+03:00  INFO 173060 --- [main] com.gildedrose.GildedRoseApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-09-24T23:42:32.750+03:00  INFO 173060 --- [main] com.gildedrose.GildedRoseApplication     : Started GildedRoseApplication in 1.215 seconds (process running for 1.835)
+2025-09-24T23:42:32.754+03:00  INFO 173060 --- [main] com.gildedrose.GildedRoseApplication     : Starting application GildedRose
+2025-09-24T23:42:32.760+03:00  INFO 173060 --- [main] com.gildedrose.GildedRoseApplication     : Finish succesfully application GildedRose
+2025-09-24T23:42:32.761+03:00  INFO 173060 --- [main] com.gildedrose.GildedRoseApplication     : Exit application GildedRose
+2025-09-24T23:50:19.162+03:00  INFO 193228 --- [main] com.gildedrose.GildedRoseApplication     : Starting GildedRoseApplication using Java 21.0.4 with PID 193228 (C:\sendai\gilded-rose-spring-v2\target\classes started by ivann in C:\sendai\gilded-rose-spring-v2)
+2025-09-24T23:50:19.164+03:00 DEBUG 193228 --- [main] com.gildedrose.GildedRoseApplication     : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-09-24T23:50:19.165+03:00  INFO 193228 --- [main] com.gildedrose.GildedRoseApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-09-24T23:50:19.676+03:00  INFO 193228 --- [main] com.gildedrose.GildedRoseApplication     : Started GildedRoseApplication in 1.081 seconds (process running for 1.806)
+2025-09-24T23:50:19.679+03:00  INFO 193228 --- [main] com.gildedrose.GildedRoseApplication     : Starting application GildedRose
+2025-09-24T23:50:19.684+03:00  INFO 193228 --- [main] com.gildedrose.GildedRoseApplication     : Finish succesfully application GildedRose
+2025-09-24T23:50:19.685+03:00  INFO 193228 --- [main] com.gildedrose.GildedRoseApplication     : Exit application GildedRose
+2025-09-24T23:52:14.950+03:00  INFO 145280 --- [main] com.gildedrose.GildedRoseApplication     : Starting GildedRoseApplication using Java 21.0.4 with PID 145280 (C:\sendai\gilded-rose-spring-v2\target\classes started by ivann in C:\sendai\gilded-rose-spring-v2)
+2025-09-24T23:52:14.952+03:00 DEBUG 145280 --- [main] com.gildedrose.GildedRoseApplication     : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-09-24T23:52:14.953+03:00  INFO 145280 --- [main] com.gildedrose.GildedRoseApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-09-24T23:52:15.444+03:00  INFO 145280 --- [main] com.gildedrose.GildedRoseApplication     : Started GildedRoseApplication in 0.955 seconds (process running for 1.544)
+2025-09-24T23:52:15.448+03:00  INFO 145280 --- [main] com.gildedrose.GildedRoseApplication     : Starting application GildedRose
+2025-09-24T23:52:15.453+03:00  INFO 145280 --- [main] com.gildedrose.GildedRoseApplication     : Finish succesfully application GildedRose
+2025-09-24T23:52:15.454+03:00  INFO 145280 --- [main] com.gildedrose.GildedRoseApplication     : Exit application GildedRose
