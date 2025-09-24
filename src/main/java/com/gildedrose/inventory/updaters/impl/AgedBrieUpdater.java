@@ -1,11 +1,9 @@
 package com.gildedrose.inventory.updaters.impl;
 
-
 import com.gildedrose.inventory.exceptions.GildedRoseException;
 import com.gildedrose.inventory.model.Item;
 import com.gildedrose.inventory.updaters.concrete.BaseUpdater;
 import lombok.extern.slf4j.Slf4j;
-
 
 @Slf4j
 public final class AgedBrieUpdater extends BaseUpdater {

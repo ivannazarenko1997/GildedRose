@@ -1,7 +1,5 @@
 package com.gildedrose;
 
-
-
 import com.gildedrose.inventory.GildedRose;
 import com.gildedrose.inventory.exceptions.GildedRoseException;
 import org.junit.jupiter.api.Test;

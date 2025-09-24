@@ -1,6 +1,5 @@
 package com.gildedrose.inventory.factory.impl;
 
-
 import com.gildedrose.inventory.enums.ItemNames;
 import com.gildedrose.inventory.factory.ItemUpdaterFactory;
 import com.gildedrose.inventory.updaters.ItemUpdater;

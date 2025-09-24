@@ -7,10 +7,6 @@ import com.gildedrose.inventory.model.Item;
 import com.gildedrose.inventory.updaters.ItemUpdater;
 import lombok.extern.slf4j.Slf4j;
 
-/**
- * Orchestrator that preserves the original 'items' contract.
- * Allowed to change updateQuality() and add new classes.
- */
 @Slf4j
 public class GildedRose {
     private static final ItemUpdaterFactory UPDATER_FACTORY = new DefaultItemUpdaterFactory();

@@ -1,6 +1,5 @@
 package com.gildedrose.inventory.updaters.concrete;
 
-
 import com.gildedrose.inventory.model.Item;
 import com.gildedrose.inventory.updaters.ItemUpdater;
 

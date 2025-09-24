@@ -1,6 +1,5 @@
 package com.gildedrose.inventory.updaters.impl;
 
-
 import com.gildedrose.inventory.exceptions.GildedRoseException;
 import com.gildedrose.inventory.model.Item;
 import com.gildedrose.inventory.updaters.concrete.BaseUpdater;
