@@ -1,11 +1,9 @@
 package com.gildedrose.inventory.exceptions;
 
 public class GildedRoseException extends RuntimeException {
-
     public GildedRoseException() {
         super();
     }
-
     public GildedRoseException(String message) {
         super(message);
     }
