@@ -33,3 +33,5 @@ mvn clean package
 This will generate a JAR file inside the target/ directory, e.g.:
 
 java -jar target/gilded-rose-spring-v2-1.0.0.jar
+
+java -jar target/gilded-rose-spring-v2-1.0.0.jar --csv=items.csv --days=30

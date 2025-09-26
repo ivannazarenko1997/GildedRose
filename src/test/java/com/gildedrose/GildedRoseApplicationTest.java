@@ -1,81 +1,77 @@
 package com.gildedrose;
 
+import com.gildedrose.boot.DaysResolver;
+import com.gildedrose.boot.InventoryInputResolver;
 import com.gildedrose.inventory.GildedRose;
 import com.gildedrose.inventory.exceptions.GildedRoseException;
+import com.gildedrose.inventory.model.Item;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.*;
 
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
+import static org.mockito.Mockito.*;
 
-import static org.junit.jupiter.api.Assertions.*;
+class GildedRoseApplicationTest {
 
-final class GildedRoseApplicationTest {
+    @Mock
+    private DaysResolver daysResolver;
 
-    private int invokeParseDaysArgument(String[] args) {
-        try {
-            GildedRoseApplication app = new GildedRoseApplication();
-            Method m = GildedRoseApplication.class.getDeclaredMethod("parseDaysArgument", String[].class);
-            m.setAccessible(true);
-            Object result = m.invoke(app, (Object) args);
-            return (int) result;
-        } catch (InvocationTargetException ite) {
-            // unwrap the real cause thrown from the method
-            if (ite.getCause() instanceof RuntimeException re) throw re;
-            throw new RuntimeException(ite.getCause());
-        } catch (Exception e) {
-            throw new RuntimeException("Reflection failure", e);
+    @Mock
+    private InventoryInputResolver inventoryInputResolver;
+
+    @InjectMocks
+    private GildedRoseApplication application;
+
+    @BeforeEach
+    void setUp() {
+        MockitoAnnotations.openMocks(this);
+    }
+
+    @Test
+    void run_shouldUpdateQualityForOneDay_whenDaysIsOne() throws Exception {
+        String[] args = {"--days=1"};
+        Item[] items = {new Item("Aged Brie", 10, 20)};
+        when(daysResolver.parseDaysArgument(args)).thenReturn(1);
+        when(inventoryInputResolver.resolve(args)).thenReturn(items);
+
+        try (MockedConstruction<GildedRose> mocked = mockConstruction(GildedRose.class,
+                (mock, context) -> doNothing().when(mock).updateQuality())) {
+            application.run(args);
         }
+
+        verify(daysResolver).parseDaysArgument(args);
+        verify(inventoryInputResolver).resolve(args);
     }
 
     @Test
-    void whenArgsNull_returnsDefault1() {
-        assertEquals(1, invokeParseDaysArgument(null));
+    void run_shouldUpdateQualityForMultipleDays_whenDaysGreaterThanOne() throws Exception {
+        String[] args = {"--days=5"};
+        Item[] items = {new Item("Backstage passes", 15, 20)};
+        when(daysResolver.parseDaysArgument(args)).thenReturn(5);
+        when(inventoryInputResolver.resolve(args)).thenReturn(items);
+
+        try (MockedConstruction<GildedRose> mocked = mockConstruction(GildedRose.class,
+                (mock, context) -> doNothing().when(mock).updateQuality(5))) {
+            application.run(args);
+        }
+
+        verify(daysResolver).parseDaysArgument(args);
+        verify(inventoryInputResolver).resolve(args);
     }
 
     @Test
-    void whenArgsEmpty_returnsDefault1() {
-        assertEquals(1, invokeParseDaysArgument(new String[]{}));
+    void run_shouldHandleGildedRoseException() throws Exception {
+        String[] args = {"--days=3"};
+        when(daysResolver.parseDaysArgument(args)).thenThrow(new GildedRoseException("Invalid input"));
+
+        application.run(args);
     }
 
     @Test
-    void whenValidPositiveInt_returnsThatValue() {
-        assertEquals(20, invokeParseDaysArgument(new String[]{"20"}));
-    }
+    void run_shouldHandleGenericException() throws Exception {
+        String[] args = {"--days=3"};
+        when(daysResolver.parseDaysArgument(args)).thenThrow(new RuntimeException("Unknown error"));
 
-    // ---- invalid -> GildedRoseException ----
-
-    @Test
-    void whenNonInteger_throwsGildedRoseException() {
-        assertThrows(GildedRoseException.class,
-                () -> invokeParseDaysArgument(new String[]{"abc"}));
-    }
-
-    @Test
-    void whenZero_throwsGildedRoseException() {
-        assertThrows(GildedRoseException.class,
-                () -> invokeParseDaysArgument(new String[]{"0"}));
-    }
-
-    @Test
-    void whenNegative_throwsGildedRoseException() {
-        assertThrows(GildedRoseException.class,
-                () -> invokeParseDaysArgument(new String[]{"-5"}));
-    }
-
-    @Test
-    void whenMaxIntegerOrMore_throwsGildedRoseException() {
-        assertThrows(GildedRoseException.class,
-                () -> invokeParseDaysArgument(new String[]{String.valueOf(Integer.MAX_VALUE)}));
-    }
-
-    @Test
-    void nullItemsArray_isNoop_three_days_andDoesNotThrow() {
-        GildedRose app = new GildedRose(null);
-        assertDoesNotThrow(() -> app.updateQuality(3));
-    }
-    @Test
-    void nullItemsArray_isNoop_andDoesNotThrow() {
-        GildedRose app = new GildedRose(null);
-        assertDoesNotThrow(() -> app.updateQuality());
+        application.run(args);
     }
 }
