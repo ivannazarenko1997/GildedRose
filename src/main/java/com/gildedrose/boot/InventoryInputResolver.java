@@ -1,6 +1,5 @@
 package com.gildedrose.boot;
 
-
 import com.gildedrose.inventory.model.Item;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
@@ -11,10 +10,6 @@ public class InventoryInputResolver {
 
     private final ItemParser itemParser;
     private final SampleInventorySeeder sampleInventorySeeder;
-
-    /**
-     * If --csv=path is provided, uses CSV items; otherwise, uses sample items.
-     */
     public Item[] resolve(String[] args) {
         String csv = argValue(args, "--csv=");
         if (csv != null && !csv.isBlank()) {

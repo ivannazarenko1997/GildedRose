@@ -14,7 +14,6 @@ import java.util.List;
 
 @Component
 public class ItemParser {
-
     public Item[] fromCsv(String csvPath) {
         Path p = Path.of(csvPath);
         if (!Files.exists(p)) {

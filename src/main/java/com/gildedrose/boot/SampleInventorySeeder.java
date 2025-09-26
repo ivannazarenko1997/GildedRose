@@ -1,13 +1,10 @@
 package com.gildedrose.boot;
 
-
-
 import com.gildedrose.inventory.model.Item;
 import org.springframework.stereotype.Component;
 
 @Component
 public class SampleInventorySeeder {
-
     public Item[] sampleItems() {
         return new Item[] {
                 new Item("+5 Dexterity Vest", 10, 20),
