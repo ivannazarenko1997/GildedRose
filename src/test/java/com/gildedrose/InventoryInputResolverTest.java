@@ -1,15 +1,19 @@
 package com.gildedrose;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.verifyNoInteractions;
+import static org.mockito.Mockito.when;
+
 import com.gildedrose.boot.InventoryInputResolver;
 import com.gildedrose.boot.ItemParser;
 import com.gildedrose.boot.SampleInventorySeeder;
+import com.gildedrose.boot.impl.InventoryInputResolverImpl;
 import com.gildedrose.inventory.model.Item;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.*;
-
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 
 class InventoryInputResolverTest {
 
@@ -24,7 +28,7 @@ class InventoryInputResolverTest {
     @BeforeEach
     void setUp() {
         MockitoAnnotations.openMocks(this);
-        resolver = new InventoryInputResolver(itemParser, sampleInventorySeeder);
+        resolver = new InventoryInputResolverImpl(itemParser, sampleInventorySeeder);
     }
 
     @Test

@@ -1,13 +1,15 @@
 package com.gildedrose;
 
-import com.gildedrose.boot.DaysResolver;
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import static org.junit.jupiter.api.Assertions.*;
+import com.gildedrose.boot.DaysResolver;
+import com.gildedrose.boot.impl.DaysResolverImpl;
+import org.junit.jupiter.api.Test;
 
 class DaysResolverTest {
 
-    private final DaysResolver resolver = new DaysResolver();
+    private final DaysResolver resolver = new DaysResolverImpl();
 
     @Test
     void shouldParseValidDaysArgument() {
